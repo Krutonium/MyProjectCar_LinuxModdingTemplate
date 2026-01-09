@@ -1,0 +1,12 @@
+# Build outputs
+bin/
+obj/
+.idea/
+
+# Visual Studio temporary files
+*.user
+*.suo
+*.tmp
+
+# NuGet packages (if any are restored locally)
+packages/
