@@ -116,6 +116,7 @@ class Program
         {
             string relativePath = Path.GetRelativePath(templateDirectory, filePath);
             string newFileName = relativePath.Replace("MPCLinuxTemplate", ModName);
+            newFileName = newFileName.Replace("_EntryPoint", "");
             string destinationPath = Path.Combine(projectDirectory, newFileName);
 
             if (destinationPath.EndsWith(".csproj.tmp"))
@@ -135,6 +136,7 @@ class Program
             fileContent = fileContent.Replace("@MSC_LOADER_ROOT", mscLoaderRoot);
             fileContent = fileContent.Replace("@MSC_GAME_ROOT", mscGameRoot);
             fileContent = fileContent.Replace("@MODS_DIR", Path.Combine(mscGameRoot, "Mods"));
+            //fileContent = fileContent.Replace("@GAMENAME", )
 
             File.WriteAllText(destinationPath, fileContent);
         }
