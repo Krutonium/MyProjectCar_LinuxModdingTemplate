@@ -8,11 +8,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Compile Remove="ProjectTemplate\MPCLinuxTemplate_EntryPoint.cs" />
-      <None Include="ProjectTemplate\MPCLinuxTemplate_EntryPoint.cs">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      </None>
-      <None Update="ProjectTemplate\MPCLinuxTemplate.csproj.tmp">
+      <None Include="ProjectTemplate\*">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
     </ItemGroup>
