@@ -11,6 +11,10 @@
       <None Include="ProjectTemplate\*">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
+      <Compile Remove="ProjectTemplate\MPCLinuxTemplate_EntryPoint.cs" />
+      <None Include="ProjectTemplate\MPCLinuxTemplate_EntryPoint.cs">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
     </ItemGroup>
 
 </Project>
